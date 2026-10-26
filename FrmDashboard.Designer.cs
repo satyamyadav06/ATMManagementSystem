@@ -1,0 +1,120 @@
+﻿namespace ATM
+{
+    partial class FrmDashboard
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lblWelcome = new Label();
+            btnCheckBalance = new Button();
+            btnDeposit = new Button();
+            btnWithdraw = new Button();
+            btnMiniStatement = new Button();
+            btnLogout = new Button();
+            SuspendLayout();
+            // 
+            // lblWelcome
+            // 
+            lblWelcome.AutoSize = true;
+            lblWelcome.Location = new Point(317, 93);
+            lblWelcome.Name = "lblWelcome";
+            lblWelcome.Size = new Size(161, 25);
+            lblWelcome.TabIndex = 0;
+            lblWelcome.Text = "ATM DASHBOARD";
+            // 
+            // btnCheckBalance
+            // 
+            btnCheckBalance.Location = new Point(159, 167);
+            btnCheckBalance.Name = "btnCheckBalance";
+            btnCheckBalance.Size = new Size(112, 34);
+            btnCheckBalance.TabIndex = 1;
+            btnCheckBalance.Text = "Check Balance";
+            btnCheckBalance.UseVisualStyleBackColor = true;
+            btnCheckBalance.Click += btnCheckBalance_Click;
+            // 
+            // btnDeposit
+            // 
+            btnDeposit.Location = new Point(423, 167);
+            btnDeposit.Name = "btnDeposit";
+            btnDeposit.Size = new Size(112, 34);
+            btnDeposit.TabIndex = 2;
+            btnDeposit.Text = "Deposit";
+            btnDeposit.UseVisualStyleBackColor = true;
+            // 
+            // btnWithdraw
+            // 
+            btnWithdraw.Location = new Point(159, 263);
+            btnWithdraw.Name = "btnWithdraw";
+            btnWithdraw.Size = new Size(112, 34);
+            btnWithdraw.TabIndex = 3;
+            btnWithdraw.Text = "Withdraw";
+            btnWithdraw.UseVisualStyleBackColor = true;
+            // 
+            // btnMiniStatement
+            // 
+            btnMiniStatement.Location = new Point(423, 263);
+            btnMiniStatement.Name = "btnMiniStatement";
+            btnMiniStatement.Size = new Size(112, 34);
+            btnMiniStatement.TabIndex = 4;
+            btnMiniStatement.Text = "Mini Statement";
+            btnMiniStatement.UseVisualStyleBackColor = true;
+            // 
+            // btnLogout
+            // 
+            btnLogout.Location = new Point(295, 361);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(112, 34);
+            btnLogout.TabIndex = 5;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = true;
+            // 
+            // FrmDashboard
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnLogout);
+            Controls.Add(btnMiniStatement);
+            Controls.Add(btnWithdraw);
+            Controls.Add(btnDeposit);
+            Controls.Add(btnCheckBalance);
+            Controls.Add(lblWelcome);
+            Name = "FrmDashboard";
+            Text = "FrmDashboard";
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label lblWelcome;
+        private Button btnCheckBalance;
+        private Button btnDeposit;
+        private Button btnWithdraw;
+        private Button btnMiniStatement;
+        private Button btnLogout;
+    }
+}
